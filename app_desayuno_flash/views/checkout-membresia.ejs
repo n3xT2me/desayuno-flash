@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción | Flash Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { bg: '#F4F3FA', shell: '#F9F9FD', sidebar: '#F5F4FA', accent: '#16a34a', lightAccent: '#dcfce7', textPrimary: '#20202A', textSecondary: '#737486', muted: '#A3A4B4', card: '#FFFFFF' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F4F3FA; background-image: linear-gradient(135deg, #F4F3FA 0%, #FFFFFF 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.72); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.7); }
+        .logo-bubble:hover { transform: scale(1.1) rotate(5deg); }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen text-brand-textPrimary">
+    <div class="bg-brand-shell flex w-full h-screen overflow-hidden">
+        
+        <aside class="w-[64px] bg-brand-sidebar flex flex-col items-center py-5 justify-between border-r border-white">
+            <div class="flex flex-col items-center gap-8">
+                <a href="/" class="logo-bubble w-[40px] h-[40px] rounded-full bg-gradient-to-tr from-brand-accent to-green-400 flex items-center justify-center shadow-md">
+                    <i class="fa-solid fa-leaf text-white absolute text-sm transform -translate-x-1 translate-y-1 opacity-90"></i>
+                    <i class="fa-solid fa-bolt text-yellow-300 absolute text-lg transform translate-x-1 -translate-y-1"></i>
+                </a>
+            </div>
+            <div class="flex flex-col gap-4 text-brand-muted">
+                <a href="/membresias" class="w-10 h-10 rounded-xl hover:bg-gray-200 text-gray-500 flex items-center justify-center transition" title="Cancelar"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+        </aside>
+
+        <main class="flex-1 flex flex-col overflow-hidden">
+            <div class="flex-1 overflow-y-auto p-[20px] lg:p-[40px] bg-white rounded-tl-[20px]">
+                <div class="w-full max-w-[800px] mx-auto">
+                    
+                    <a href="/membresias" class="inline-flex items-center text-sm font-semibold text-brand-textSecondary hover:text-brand-accent transition mb-6"><i class="fa-solid fa-arrow-left mr-2"></i> Volver a Planes</a>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        
+                        <!-- Resumen del Plan -->
+                        <div>
+                            <h1 class="text-2xl font-extrabold text-gray-900 mb-6">Confirma tu Suscripción</h1>
+                            
+                            <div class="glass-card rounded-[14px] p-6 mb-8 border-2 border-brand-accent shadow-sm bg-gradient-to-br from-brand-lightAccent/30 to-white">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="fa-solid fa-crown text-brand-accent text-2xl"></i>
+                                    <h2 class="font-bold text-xl"><%= plan.name %></h2>
+                                </div>
+                                <p class="text-xs text-brand-textSecondary mb-4">Suscripción recurrente mensual con beneficios exclusivos MVP.</p>
+                                <div class="text-left border-t border-brand-accent/20 pt-4">
+                                    <p class="text-[10px] font-bold uppercase tracking-wider text-gray-500 mb-1">Total a Pagar</p>
+                                    <p class="font-extrabold text-3xl text-gray-900">S/ <%= plan.price.toFixed(2) %><span class="text-sm text-gray-500 font-normal">/mes</span></p>
+                                </div>
+                            </div>
+
+                            <form action="/procesar-membresia" method="POST" id="membership-form">
+                                <input type="hidden" name="membership_type" value="<%= plan.name %>">
+                            </form>
+                        </div>
+
+                        <!-- Pago Yape / Plin -->
+                        <div>
+                            <div class="glass-card rounded-[20px] p-8 shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-gray-100 text-center relative overflow-hidden h-full flex flex-col justify-center">
+                                <div class="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-purple-500 to-teal-400"></div>
+                                
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Paga tu Membresía</h3>
+                                <p class="text-xs text-brand-textSecondary mb-6">Escanea el QR para activar tu suscripción MVP inmediatamente.</p>
+                                
+                                <div class="w-48 h-48 bg-white border-2 border-gray-200 rounded-2xl mx-auto flex items-center justify-center mb-6 shadow-sm relative group">
+                                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=PagoSuscripcionDesayunoFlash" class="w-36 h-36 opacity-90 group-hover:opacity-100 transition">
+                                    <div class="absolute top-2 right-2 flex gap-1">
+                                        <div class="w-4 h-4 rounded-full bg-purple-600 shadow" title="Yape"></div>
+                                        <div class="w-4 h-4 rounded-full bg-teal-400 shadow" title="Plin"></div>
+                                    </div>
+                                </div>
+
+                                <button type="button" onclick="document.getElementById('membership-form').submit();" class="w-full bg-brand-textPrimary hover:bg-black text-white font-bold py-4 rounded-xl text-sm transition flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-lock"></i> Transferí S/ <%= plan.price.toFixed(2) %>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

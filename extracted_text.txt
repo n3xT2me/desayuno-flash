@@ -1,0 +1,282 @@
+Fecha de entrega: Desde el 07 septiembre al 13 septiembre
+INFORMACIÓN DEL EMPRENDIMIENTO
+EQUIPO
+Nombre completo – Sección C
+Damián Ocupa, Eli
+Fernández Cubas, Víctor
+Vásquez Céspedes, Cristina
+IDEA DE NEGOCIO/ EMPRENDIMIENTO
+Desayuno Flash Saludable: Aplicación móvil interactiva que conecta a estudiantes y trabajadores con una red seleccionada de restaurantes y locales fit de Chiclayo, ofreciendo la gestión, reserva y entrega express de desayunos saludables y personalizados mediante la función de programación nocturna.
+ASESOR
+Carlos Enrique Mauriola Huamanchumo
+PLAN ESTRATÉGICO 
+Contenido
+Nombre del emprendimiento:
+Desayuno Flash Saludable:  Plataforma digital intermedia que centraliza la oferta de desayunos nutritivos de restaurantes y cafeterías saludables locales en Chiclayo. Está diseñada para facilitar el acceso a alimentos frescos y de calidad a estudiantes de educación superior y trabajadores que requieren optimizar su tiempo durante la rutina matutina.
+La oferta concreta comprende un directorio digital de locales afiliados que ofrecen menús equilibrados y adaptados a distintos requerimientos nutricionales. La plataforma integra funcionalidades clave como el catálogo por restaurante, la personalización de insumos, el seguimiento del delivery en tiempo real, pagos mediante billeteras digitales y la función exclusiva de programación nocturna, la cual permite agendar la orden desde el día anterior para recibir el pedido a primera hora sin tiempos de espera.
+Objetivos globales (respecto a su emprendimiento):
+Lograr que al menos 1000 estudiantes y trabajadores de Chiclayo descarguen la aplicación móvil y registren un perfil activo durante el primer año de operaciones ( alcanzando una meta intermedia de 500 usuarios en los primeros 6 meses)
+Intermediar un promedio de 40 a 50 pedidos programados diarios al cierre del primer año de funcionamiento en Chiclayo,  sosteniendo un crecimiento del 15% mensual durante el primer semestre.
+Alcanzar una calificación de satisfacción de al menos el 85% entre los usuarios activos durante los primeros 3 meses, evaluada mediante el módulo de reseñas integradas en la aplicación móvil.
+Afiliar un mínimo de 5 restaurantes y locales fit en Chiclayo, durante el primer mes de lanzamiento, consolidando un catalogo inicial de al menos 12 opciones de desayunos nutritivos y personalizables.
+Implementar y validar la versión MVP (Producto Mínimo Viable) de la aplicación móvil con el público objetivo en los primeros 3 meses, ejecutando actualizaciones continuas según la retroalimentación de los usuarios.
+Garantizar que el 90% de los pedidos programados se entreguen con puntualidad exacta en los puntos estratégicos o centros de destino durante los primeros 6 meses de operación.
+Lograr que el 30% de los usuarios que realicen una primera compra a través de la App se suscriban a planes semanales o vuelvan a pedir al menos una vez por semana durante los primeros 4 meses.
+Misión
+Facilitar el acceso a una alimentación balanceada a estudiantes y trabajadores con horarios ajustados en Chiclayo, conectándolos con una red seleccionada de restaurantes saludables locales a través de una aplicación móvil innovadora, garantizando la personalización de sus pedidos, la facilidad de la programación nocturna y la puntualidad en entregas matutinas.
+Visión 
+Para el 2030, consolidarse como la plataforma digital líder en la gestión y distribución de desayunos saludables a nivel nacional, siendo reconocidos por impulsar el crecimiento de los comercios gastronómicos locales, nuestra excelencia en la puntualidad logística y la innovación constante en la experiencia del usuario.
+Equipo 
+INTEGRANTES
+CARGO
+FUNCIONES
+Fernández Cubas, Víctor
+CEO - Director Ejecutivo
+​Definir la visión y estrategia general del negocio para garantizar el cumplimiento de los objetivos globales.
+Liderar la prospección, negociación y firma de alianzas estratégicas con los restaurantes y locales fit afiliados en Chiclayo.
+Representar legalmente al emprendimiento y supervisar las metas de crecimiento comercial e ingresos intermediados.
+Vásquez Céspedes, Cristina
+​
+COO- Directora de Operaciones
+​Diseñar, monitorear y optimizar la red de reparto matutino y la logística de recojo en los restaurantes afiliados.
+Coordinar con los locales asociados para asegurar el cumplimiento estricto de los horarios de preparación y estándares de higiene.
+Garantizar el indicador del 90% de entregas puntuales en las zonas universitarias y ejecutivas estratégicas de Chiclayo.
+Damián Ocupa, Eli
+CMO-     Director de Marketing
+Diseñar e implementar las campañas publicitarias digitales para la captación de estudiantes y trabajadores en Chiclayo.
+Gestionar las redes sociales, la identidad de marca y la estrategia de fidelización (planes de suscripción y promociones).
+Analizar las métricas de conversión, nivel de satisfacción del usuario (sistema de reseñas) y gestionar la retención de clientes.
+Vásquez Céspedes Cristina 
+(cargo acumulado)
+​
+CPO - Directora de Producto
+Diseñar la estructura del catálogo digital y validar la variabilidad de combos nutritivos ofrecidos por los locales asociados.
+Analizar el comportamiento del consumidor y la aceptación de los menús para optimizar la oferta en la plataforma.
+Supervisar que los platillos publicados cumplan con la propuesta de valor de alimentación equilibrada y personalizada.
+Damian Ocupa Eli
+(cargo acumulado)
+​CIO - Director de Información / Canales Digitales.
+Administrar el correcto funcionamiento de la aplicación móvil y gestionar el prototipo funcional interactivo.
+Supervisar la integración de las pasarelas de pago digital (Yape, Plin y tarjetas) y el módulo de programación nocturna.
+Gestionar la base de datos de usuarios, la métrica de descargas y el sistema automatizado de notificaciones push.
+Análisis de mercado
+Segmento de clientes (TAM SAM SOM)
+TAM:
+Conformado por la totalidad de la Población Económicamente Activa (PEA) ocupada y los estudiantes de educación superior en el Perú que requieren opciones de alimentación rápida y nutritiva en las mañanas. Según datos oficiales del INEI, la PEA ocupada en el país asciende a aproximadamente 17.3 millones de personas, a las que se suman cerca de 2.2 millones de estudiantes universitarios y técnicos. Esto representa un TAM de 19.5 millones de consumidores potenciales a nivel nacional.
+SAM:
+El Mercado Disponible (SAM) Corresponde a la población urbana de la Macrorregión Norte (con foco en la región Lambayeque) que posee un smartphone con acceso a internet y el hábito de consumir alimentos fuera del hogar o solicitar servicio de delivery. Filtrando la población ocupada y universitaria de la región urbana mediante los indicadores del INEI (83.5% con acceso a internet móvil y un 50% con hábito de consumo de comida preparada/delivery), se obtiene un SAM regional de aproximadamente 380,000 personas.
+SOM:
+El SOM es la porción del SAM que podría alcanzar progresivamente mediante una estrategia de crecimiento basada en alianzas con restaurantes y locales fit de Chiclayo, convenios con universidades e instituciones locales, publicidad digital, promociones de bienvenida y expansión hacia zonas clave de la ciudad; aplicando una meta de captación equivalente al 10% del SAM local (275,000 personas), se obtiene un SOM aproximado de 27,500 usuarios, cifra que resulta atractiva y, al mismo tiempo, razonable frente al tamaño del mercado chiclayano. Esta proyección no significa que el emprendimiento captará 27,500 clientes durante el primer año, sino que representa el mercado objetivo acumulado que podría alcanzarse en un horizonte de mediano plazo; para el primer año, el proyecto establece una meta concreta de 500 usuarios activos registrados en la aplicación móvil.
+Datos sobre población ocupada en el Perú (INEI 2024):
+https://www.gob.pe/institucion/inei/noticias/1110094-poblacion-ocupada-del-pais-alcanzo-17-millones-322-mil-900-personas-en-el-ano-2024
+Estadísticas de acceso a internet y celulares (INEI 2024):
+https://www.gob.pe/institucion/inei/noticias/1133448-el-58-4-de-los-hogares-del-pais-tiene-acceso-a-internet
+Encuesta sobre consumo de alimentos fuera del hogar y hábitos de vida (INEI):
+https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1719/Libro.pdf
+COMPETENCIA
+CRITERIO
+TU EMPRESA: Desayuno Flash
+COMPETENCIA 1: Manzana Verde
+COMPETENCIA 2: Nutrifit App
+COMPETENCIA 3: Nutrimenu
+COMPETENCIA 4: Keto & Health App
+COMPETENCIA 5: Rappi / PedidosYa
+¿ES APP MÓVIL?
+Sí (App interactiva)
+Sí (App móvil)
+Sí (App/Web)
+Sí (App móvil)
+Sí (App móvil)
+Sí (App masiva)
+CLIENTE OBJETIVO
+Estudiantes y trabajadores de Chiclayo que quieren desayunos sanos y rápidos.
+Personas que buscan almuerzos/cenas por suscripción semanal.
+Deportistas que buscan menús fitness o por paquetes.
+Personas que buscan dietas personalizadas y menú supervisado.
+Personas que siguen dietas estrictas (Keto, Low Carb).
+Público general que pide cualquier tipo de comida a domicilio.
+PRODUCTO
+Plataforma que conecta con locales fit en Chiclayo. Destaca por la programación nocturna.
+Precio: S/ 10 - S/ 18.
+App de suscripción enfocada en almuerzos y cenas.
+Precio: S/ 15.50 - S/ 25 por plato.
+Venta de platos fitness preparados o congelados.
+Precio: S/ 16 - S/ 24 por plato.
+Planes alimenticios con recetas y platos a la medida.
+Precio: S/ 25 - S/ 45 por plan.
+Venta y envío de comida y snacks para dietas específicas.
+Precio: S/ 20 - S/ 35 por producto.
+Delivery masivo de comida sin enfoque exclusivo en salud.
+Precio: S/ 15 - S/ 35 + envío.
+FORTALEZAS
+Especializada 100% en desayunos, agendamiento nocturno y entrega rápida en Chiclayo.
+Marca posicionada a nivel nacional en suscripciones.
+Menús con alto contenido proteico ideal para gimnasios.
+Planes de nutrición altamente personalizados.
+Fiel al nicho de dietas específicas (Keto, sin gluten).
+Cobertura masiva y gran flota de repartidores en Chiclayo.
+DEBILIDADES
+Marca nueva en fase de lanzamiento en Chiclayo.
+Enfocada en almuerzos; no es ágil para desayunos al instante.
+Poca oferta de desayunos rápidos y centrada en Lima.
+Precios elevados y tiempos de preparación más largos.
+Catálogo reducido al limitarse solo a ciertas dietas.
+No ofrece agendamiento nocturno especializado para desayunos.
+TENDENCIAS Y OPORTUNIDADES
+Tendencia 1. Adopción masiva de teléfonos inteligentes en zonas urbanas
+El acceso a la tecnología móvil constituye una de las principales bases para la digitalización del consumo. Según el informe técnico de Tecnologías de Información del INEI, el 95.1% de los hogares peruanos cuenta con al menos un smartphone y el 83.5% de la población urbana accede a internet de forma diaria. Esta brecha tecnológica superada demuestra la existencia de un mercado preparado para interactuar con servicios digitales. Para Desayuno Flash Saludable, representa la oportunidad ideal para canalizar su oferta mediante un prototipo móvil intuitivo y accesible en Chiclayo.
+INEI - Estado de la Tecnología de la Información en el Perú: https://www.inei.gob.pe/estadisticas/indice-tematico/tecnologia-de-la-informacion/
+Tendencia 2. Crecimiento en la preferencia por alimentos saludables y balanceados
+El consumidor peruano prioriza cada vez más la salud preventiva en su dieta diaria. Estudios desarrollados por Ipsos Perú y el Ministerio de Salud (MINSA) revelan que el 70% de los peruanos en zonas urbanas busca y consume activamente opciones de alimentos saludables, prefiriendo insumos frescos sobre productos ultra procesados. Esta tendencia orienta los criterios de selección de Desayuno Flash Saludable para afiliar a restaurantes y locales fit locales que garanticen una oferta nutricional balanceada y de calidad dentro del catálogo de la aplicación.
+MINSA / Ipsos Perú - Hábitos de alimentación y vida saludable en el Perú: https://www.gob.pe/minsa
+Tendencia 3. Expansión de las billeteras digitales y pagos sin contacto
+La digitalización de las transacciones financieras en el Perú registra un crecimiento sin precedentes. De acuerdo con reportes del Banco Central de Reserva del Perú (BCRP), el uso de billeteras digitales (como Yape y Plin) creció en más de un 150% en los últimos años, convirtiéndose en el principal medio de pago para más del 65% de las compras cotidianas. Esta tendencia permite a Desayuno Flash Saludable integrar pasarelas de pago instantáneas y seguras dentro de la app, eliminando el uso de efectivo y agilizando la transacción durante la mañana.
+Banco Central de Reserva del Perú (BCRP) - Notas de Estudios sobre Pagos Digitales: https://www.bcrp.gob.pe/
+Tendencia 4. Problemática persistente de omisión del desayuno por falta de tiempo
+El ritmo acelerado en las áreas urbanas impacta negativamente en la rutina matutina. Investigaciones de Datum Internacional indican que cerca del 45% de los jóvenes universitarios y trabajadores ejecutivos omiten el desayuno o consumen opciones de baja calidad nutricional debido a la prisa y la falta de tiempo. Esta problemática justifica la propuesta de valor de Desayuno Flash Saludable, respaldando la función estrella de programación nocturna para asegurar la recepción del pedido anticipadamente desde la noche anterior.
+Datum Internacional - Estudio sobre estilos de vida y uso del tiempo en el Perú: https://www.datum.com.pe/
+Tendencia 5. Incremento de la demanda de delivery en plataformas especializadas
+Los consumidores urbanos prefieren cada vez más las aplicaciones con un enfoque en nichos específicos por sobre las plataformas masivas multirrubro. Informes de Cámara de Comercio de Lima (CCL) destacan que el sector delivery de nicho especializado creció un 25% anual debido a una mayor satisfacción en la experiencia de usuario. Para Desayuno Flash Saludable, esta tendencia valida la estrategia de diferenciación frente a gigantes como Rappi o PedidosYa al especializarse al 100% en la logística y gestión de desayunos matutinos.
+Cámara de Comercio de Lima (CCL) - Reportes del Sector Comercio Electrónico y Delivery: https://www.camaralima.org.pe/
+Tendencia 6. Alta exigencia por la personalización de dietas y menús
+Existe un interés creciente por adaptar los platos a los requerimientos biológicos o metas físicas de cada individuo. Según estudios de la Sociedad Peruana de Nutrición (SOPENUT), más del 40% de los consumidores de comida saludable busca personalizar sus insumos (opciones proteicas, sin lactosa, bajas en calorías o vegetarianas). Esta conducta orienta a Desayuno Flash Saludable a estructurar funciones en la app que permitan al usuario modificar o personalizar los ingredientes de los platos ofrecidos por los locales afiliados.
+Sociedad Peruana de Nutrición (SOPENUT) - Tendencias nutricionales en el Perú: https://sopenut.org/
+Tendencia 7. Auge del autocuidado y bienestar integral en jóvenes adultos
+Los jóvenes pertenecientes a las generaciones Millennial y Gen Z conciben el autocuidado como una prioridad diaria. Encuestas globales de la consultora McKinsey & Company aplicadas a la región muestran que el 79% de los adultos jóvenes considera el bienestar como una prioridad alta y el desayuno como la comida clave para el rendimiento físico y mental. Esta tendencia permite a Desayuno Flash Saludable posicionar la marca no solo como un intermediario de comida, sino como una herramienta tecnológica para la adopción de un estilo de vida saludable.
+McKinsey & Company - The Trends in Wellness Report: https://www.mckinsey.com/
+Tendencia 8. Transformación digital del sector gastronómico y locales fit
+Los comercios gastronómicos buscan constantemente canales digitales para optimizar sus ventas. Informes del Ministerio de la Producción (PRODUCE) señalan que el 68% de las MYPEs gastronómicas han migrado hacia la digitalización para incrementar sus canales de venta sin aumentar costos fijos operativos. Esto representa una gran oportunidad para Desayuno Flash Saludable, garantizando una rápida afiliación de restaurantes y cafeterías de Chiclayo que desean captar clientes matutinos sin invertir en desarrollo web o flota propia.
+PRODUCE - Reportes de Digitalización y MYPE Gastronómicas: https://www.gob.pe/produce
+Tendencia 9. Adopción de sistemas inteligentes y recomendaciones automatizadas
+Los usuarios digitales prefieren plataformas interactiva que agilicen su toma de decisiones. Reportes sobre experiencia de usuario de la consultora Gartner destacan que las aplicaciones que integran sugerencias automatizadas y recomendaciones según el historial de compra incrementan la conversión en un 30%. Esta expectativa guía la integración de sugerencias automatizadas en la app de Desayuno Flash Saludable, permitiendo al usuario pedir su menú ideal en pocos clics.
+Gartner Research - Customer Experience and Digital Personalization Trends: https://www.gartner.com/
+Tendencia 10. Preferencia por modelos de consumo programado y recurrente
+La automatización de compras periódicas gana terreno entre personas organizadas. Estudios de la Asociación Peruana de Comercio Electrónico (APECE) muestran un crecimiento del 35% en la preferencia por servicios programados o planes de compra semanales dentro de plataformas móviles. Dicha necesidad justifica la implementación de modelos de agendamiento frecuente y suscripciones en Desayuno Flash Saludable, asegurando la retención de clientes e ingresos intermediados recurrentes.
+Cámara Peruana de Comercio Electrónico (CAPECE) - Reporte Oficial del E-Commerce Perú: https://www.capece.org.pe/
+Oportunidades:
+Oportunidad 1. Ausencia de plataformas dedicadas exclusivamente al rubro de desayunos
+La falta de competidores directos con una plataforma enfocada en la oferta matutina en Chiclayo representa una oportunidad clave para el posicionamiento temprano de la marca. Desayuno Flash Saludable puede consolidarse como la primera opción digital especializada en la ciudad, capturando el segmento de desayunos nutritivos antes del ingreso de nuevas plataformas al mercado local.
+Oportunidad 2. Elevada concentración de estudiantes y ejecutivos en nodos urbanos
+La densidad poblacional con alta carga horaria en el centro cívico y las zonas universitarias de Chiclayo facilita la optimización de los procesos de distribución. Desayuno Flash Saludable puede diseñar rutas de reparto eficientes y concentradas en estos sectores clave para captar un volumen constante de usuarios que disponen de poco tiempo en la mañana.
+Oportunidad 3. Programas de bienestar laboral y salud en empresas e instituciones
+El incremento de políticas de salud corporativa en organizaciones locales abre un canal de comercialización directo. Desayuno Flash Saludable puede establecer convenios estratégicos con empresas e instituciones de Chiclayo para gestionar el suministro periódico de desayunos saludables para sus trabajadores bajo la modalidad de pedidos programados.
+Oportunidad 4. Crecimiento de la comunidad deportiva en gimnasios y centros fit
+El incremento en la afluencia de personas a centros de entrenamiento matutinos genera una demanda directa de alimentación adaptada a metas físicas. Desayuno Flash Saludable puede desarrollar alianzas comerciales con gimnasios locales para promocionar combos proteicos y menús personalizados dirigidos a sus socios activos.
+Oportunidad 5. MYPEs gastronómicas que requieren digitalizar sus ventas matutinas
+La constante apertura de restaurantes y cafeterías fit en Chiclayo expone la necesidad de estos comercios de aumentar su cobertura sin asumir costos de software o logística. Desayuno Flash Saludable puede afiliar a estos locales a su red comercial, permitiéndoles aumentar sus ventas en las primeras horas del día mediante la plataforma móvil.
+Oportunidad 6. Demanda de soluciones automatizadas para simplificar la rutina diaria
+La preferencia de los usuarios por automatizar compras rutinarias permite el desarrollo de modelos de ingresos recurrentes. Desayuno Flash Saludable puede implementar modalidades de agendamiento frecuente y suscripciones semanales o mensuales, asegurando un flujo de pedidos fijo y el cobro de comisiones intermediadas de forma estable.
+Oportunidad 7. Insatisfacción del usuario con los tiempos de espera tradicionales
+Las demoras en la atención y la baja calidad de servicio en la oferta matutina convencional generan un nicho de clientes desencantados. Desayuno Flash Saludable puede captar a este público ofreciendo la función de programación nocturna, garantizando la entrega puntual del desayuno a primera hora del día.
+Oportunidad 8. Abastecimiento constante de insumos frescos en la región Lambayeque
+La cercanía de Chiclayo con valles agrícolas productores asegura la disponibilidad continua de frutas, verduras e insumos naturales para el sector gastronómico. Esta ventaja permite a los restaurantes afiliados a Desayuno Flash Saludable mantener costos de producción competitivos, trasladando precios accesibles al consumidor final.
+Oportunidad 9. Fondos de financiamiento público y programas de incubación empresarial
+La presencia de fondos concursables del Estado como ProInnóvate y StartUp Perú representa una fuente accesible de capital semilla. Desayuno Flash Saludable puede postular a estas convocatorias públicas para financiar el escalamiento tecnológico de la aplicación móvil y la expansión de sus operaciones.
+Oportunidad 10. Conectividad vial y expansión hacia distritos periféricos clave
+El crecimiento urbano y la cercanía con distritos de alto tránsito como Pimentel y Lambayeque facilitan la escalabilidad del modelo de negocio. Desayuno Flash Saludable puede ampliar progresivamente la cobertura geográfica de delivery a mediano plazo, utilizando la misma infraestructura digital desarrollada para Chiclayo.
+PRODUCTO MINIMO VIABLE - PROTOTIPO
+Producto Mínimo Viable
+Propuesta de valor
+Desayuno Flash Saludable es una propuesta de valor enfocada en solucionar la falta de tiempo en las mañanas que sufren estudiantes y trabajadores en Chiclayo, quienes debido a sus agendas apretadas omiten el desayuno o recurren a comida de baja calidad nutricional por la prisa matutina. El emprendimiento resuelve este problema entregando un servicio conveniente de desayunos nutritivos, frescos y personalizables a primera hora del día con estricta puntualidad. Su principal elemento diferencial radica en la programación nocturna del pedido, la cual permite al usuario asegurar una alimentación balanceada desde la noche anterior y comenzar la jornada con energía, sin perder tiempo ni comprometer su salud.
+Descripción y funcionalidad:
+Descripción: 
+Primera versión funcional de una plataforma propia, desarrollada para facilitar la gestión de desayunos saludables en Chiclayo y conectar a los usuarios con los establecimientos afiliados.
+Funcionalidad:
+Facilidad de uso: El usuario podrá realizar el proceso de selección y confirmación del pedido mediante pasos simples y claramente organizados, sin necesidad de conocimientos previos.
+Interfaz intuitiva: La distribución de las opciones, botones y contenidos permitirá una navegación clara, facilitando que el usuario comprenda cómo utilizar la plataforma desde el primer ingreso.
+Tiempo de uso: El proceso completo para realizar un pedido tendrá una duración aproximada de 1 a 2 minutos, desde el ingreso a la plataforma hasta la confirmación.
+Flexibilidad: La plataforma permitirá realizar ajustes en la información del pedido y adaptarse a cambios en la disponibilidad de productos, horarios y necesidades del servicio.
+Funcionamiento: El prototipo permitirá simular el recorrido completo del usuario, desde el ingreso y selección del desayuno hasta la confirmación de la solicitud.
+Punto clave de valor: Facilitar la planificación del desayuno de manera anticipada, reduciendo el tiempo y esfuerzo que el usuario dedica a realizar su pedido durante la mañana.
+Principales Características:
+Personalización de desayunos: Opciones para adaptar los combos de cada restaurante según metas físicas (fitness, bajo en calorías, sin lactosa).
+Sistema de programación nocturna: Módulo para agendar la orden la noche anterior, permitiendo al restaurante afiliado preparar el pedido a primera hora.
+Oferta de establecimientos afiliados: Reúne diferentes locales fit en una misma plataforma, brindando al usuario diversas alternativas de desayunos saludables.
+Seguimiento del pedido en tiempo real: Notificaciones sobre el estado de la orden (confirmado por el restaurante, en preparación, en ruta y entregado).
+Integración con delivery local: Sistema logístico que conecta la recogida en el restaurante elegido con la entrega rápida en zonas universitarias y ejecutivas de Chiclayo.
+Forma de validación:
+Prueba piloto del prototipo interactivo aplicada durante 2 a 3 semanas a un grupo controlado de 50 a 100 estudiantes y trabajadores de Chiclayo, trabajando en alianzas iniciales con 3 a 5 restaurantes fit locales. Se evaluará la viabilidad midiendo la tasa de pedidos programados por la noche, la frecuencia de compra por usuario y el nivel de satisfacción con la oferta de locales y los tiempos de entrega.
+Prototipo
+Descripción:
+Prototipo digital funcional de alta fidelidad interactivo que simula de forma realista la experiencia de la app móvil, permitiendo navegar por el catálogo de restaurantes, elegir un local, probar el flujo de compra y simular la programación nocturna de un desayuno en tiempo real.
+Principales Características
+Navegación e interacción: Botones y menús interactivos que permiten recorrer las diferentes pantallas y simular el funcionamiento de la plataforma.
+Directorio interactivo de locales: Pantalla que presenta los establecimientos afiliados y permite explorar sus opciones antes de realizar el pedido.
+Visualización de menús: Presenta fotografías, precios e información nutricional de los desayunos, permitiendo seleccionar las opciones deseadas.
+Módulo de agendamiento: Permite seleccionar mediante un calendario la fecha y hora en que se desea recibir el desayuno.
+Pasarela de pago simulada: Representa el proceso de pago mediante Yape, Plin y tarjetas, sin realizar transacciones reales.
+Confirmación y monitoreo: Simula la confirmación de la orden y permite visualizar su estado hasta la entrega.
+Importante: Adjuntar el prototipo y/o Producto Mínimo viable que ha venido trabajando desde Emprendimiento 1.
+Rúbrica para Evaluación de Formato de Desarrollo Estratégico
+Criterio
+Nivel 4 (Excelente)
+Nivel 3 (Bueno)
+Nivel 2 (Regular)
+Nivel 1 (Deficiente)
+Nivel 0 (No Presentado)
+%
+Misión, Visión y Objetivos
+Misión y visión claras, coherentes y alineadas al negocio. Objetivos estratégicos, medibles y alcanzables.
+Misión y visión coherentes. Objetivos definidos, pero poco medibles o específicos.
+Misión, visión u objetivos generales y con poca relación entre sí.
+Redacción confusa o elementos incompletos.
+No presenta.
+12%
+Segmento de Clientes (Incluye TAM-SAM-SOM y Early Adopters)
+Segmento claramente definido, con TAM, SAM, SOM y Early Adopters coherentes y justificados.
+Segmento definido, pero con información poco detallada o parcialmente justificada.
+Segmento general o con análisis limitado.
+Segmentación confusa o inconsistente.
+No presenta.
+12%
+Análisis de Competencia
+Identifica competidores directos e indirectos y realiza una comparación clara de diferenciación, precios, canales y ventajas.
+Identifica competidores y realiza una comparación parcial.
+Menciona competidores con escaso análisis.
+Información limitada o poco relacionada con el negocio.
+No presenta.
+12%
+Análisis de Tendencias
+Analiza tendencias relevantes y explica su impacto en el modelo de negocio.
+Identifica tendencias, pero el análisis es limitado.
+Menciona tendencias sin explicar su impacto.
+Tendencias irrelevantes o sin relación con el negocio.
+No presenta.
+10%
+Oportunidades del Mercado
+Identifica oportunidades claras y sustentadas en el análisis del mercado y del cliente.
+Presenta oportunidades pertinentes, pero con sustento limitado.
+Oportunidades generales o poco desarrolladas.
+Oportunidades sin relación con el negocio.
+No presenta.
+10%
+Desarrollo del Producto o Servicio
+Propuesta claramente diferenciada, enfocada en el usuario y con beneficios definidos.
+Propuesta clara, con diferenciación moderada.
+Propuesta general o con poco valor diferencial.
+Producto descrito sin relación con las necesidades del cliente.
+No presenta.
+12%
+Producto Mínimo Viable (PMV)
+PMV funcional, coherente con la propuesta y validado con usuarios.
+PMV funcional, con validación limitada o parcial.
+PMV básico o con escasa funcionalidad.
+PMV poco funcional o sin relación con la propuesta.
+No presenta.
+12%
+Prototipo
+Prototipo funcional, bien desarrollado y alineado con el PMV y la propuesta de valor.
+Prototipo funcional, con aspectos por mejorar.
+Prototipo básico o incompleto.
+Prototipo poco funcional o desconectado del modelo.
+No presenta.
+10%
+Nivel de Innovación (Disruptiva, Incremental o Marginal)
+Innovación claramente diferenciada, con propuesta de valor sólida y potencial de escalabilidad.
+Innovación evidente con mejoras significativas sobre soluciones existentes.
+Innovación limitada o con escasa diferenciación.
+Solución común o con innovación poco evidente.
+No presenta evidencia de innovación.
+10%
+TOTAL
+100%

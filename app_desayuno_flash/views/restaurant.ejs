@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= restaurant.name %> | Menú</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { bg: '#F4F3FA', shell: '#F9F9FD', sidebar: '#F5F4FA', accent: '#16a34a', lightAccent: '#dcfce7', textPrimary: '#20202A', textSecondary: '#737486', muted: '#A3A4B4', card: '#FFFFFF' }
+                    },
+                    boxShadow: { main: '0 10px 35px rgba(80, 75, 120, 0.08)', card: '0 4px 18px rgba(80, 75, 120, 0.05)' }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F4F3FA; background-image: linear-gradient(135deg, #F4F3FA 0%, #FFFFFF 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.72); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.7); }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #E2E1E9; border-radius: 10px; }
+        .logo-bubble { transition: all 0.3s ease; }
+        .logo-bubble:hover { transform: scale(1.1) rotate(5deg); }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen text-brand-textPrimary">
+    <!-- Application Shell -->
+    <div class="bg-brand-shell flex w-full h-screen overflow-hidden">
+        
+        <aside class="w-[64px] bg-brand-sidebar flex flex-col items-center py-5 justify-between border-r border-white">
+            <div class="flex flex-col items-center gap-8">
+                <a href="/" class="logo-bubble w-[40px] h-[40px] rounded-full bg-gradient-to-tr from-brand-accent to-green-400 flex items-center justify-center shadow-md shadow-green-500/40 relative">
+                    <i class="fa-solid fa-leaf text-white absolute text-sm transform -translate-x-1 translate-y-1 opacity-90"></i>
+                    <i class="fa-solid fa-bolt text-yellow-300 absolute text-lg transform translate-x-1 -translate-y-1"></i>
+                </a>
+                <nav class="flex flex-col gap-[18px] text-brand-muted">
+                    <a href="/" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition"><i class="fa-solid fa-house"></i></a>
+                    <a href="/restaurantes" class="w-10 h-10 rounded-xl bg-white text-brand-accent flex items-center justify-center shadow-card"><i class="fa-solid fa-utensils"></i></a>
+                    <a href="/membresias" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition" title="Membresías"><i class="fa-solid fa-crown"></i></a>
+                    <% if(user && user.role === 'admin') { %>
+                        <a href="/admin" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition" title="Panel"><i class="fa-solid fa-chart-line"></i></a>
+                    <% } %>
+                    <!-- Cart -->
+                    <a href="/cart" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition relative" title="Carrito">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <% if(locals.cart && cart.length > 0) { %>
+                            <span class="absolute -top-1 -right-1 bg-red-500 text-white text-[9px] font-bold w-4 h-4 flex items-center justify-center rounded-full"><%= cart.length %></span>
+                        <% } %>
+                    </a>
+                    <!-- Mis Pedidos -->
+                    <% if(user) { %>
+                    <a href="/mis-pedidos" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition" title="Mis Pedidos"><i class="fa-solid fa-box-open"></i></a>
+                    <% } %>
+    </nav>
+            </div>
+            <div class="flex flex-col gap-4 text-brand-muted">
+                <% if(user) { %>
+                    <a href="/logout" class="w-10 h-10 rounded-xl hover:bg-red-50 text-red-400 flex items-center justify-center transition"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                <% } else { %>
+                    <a href="/login" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition"><i class="fa-solid fa-user"></i></a>
+                <% } %>
+            </div>
+        </aside>
+
+        <main class="flex-1 flex flex-col overflow-hidden">
+            <div class="flex-1 overflow-y-auto p-[20px] lg:p-[40px] bg-white rounded-tl-[20px]">
+                <div class="w-full max-w-[1600px] mx-auto">
+                    
+                    <a href="/restaurantes" class="inline-flex items-center text-sm font-semibold text-brand-textSecondary hover:text-brand-accent transition mb-6"><i class="fa-solid fa-arrow-left mr-2"></i> Volver a Restaurantes</a>
+
+                    <!-- Cover -->
+                    <div class="h-48 w-full relative rounded-2xl overflow-hidden mb-8 shadow-card border border-gray-100">
+                        <img src="<%= restaurant.image_url %>" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
+                            <div>
+                                <div class="flex gap-2 mb-2">
+                                    <% restaurant.tags.split(',').forEach(tag => { %>
+                                        <span class="inline-block text-[10px] font-bold text-black bg-white px-2 py-1 rounded"><%= tag.trim() %></span>
+                                    <% }) %>
+                                </div>
+                                <h1 class="text-3xl font-extrabold text-white mb-1"><%= restaurant.name %></h1>
+                                <p class="text-gray-300 text-sm"><%= restaurant.description %></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-xl font-bold text-gray-900">Menús de Desayuno Disponibles</h2>
+                        <div class="bg-[#F0F0F7] h-[34px] rounded-[20px] flex items-center px-4">
+                            <i class="fa-solid fa-magnifying-glass text-xs text-brand-textSecondary"></i>
+                            <input type="text" placeholder="Buscar platillo..." class="bg-transparent border-none outline-none ml-2 w-32 text-xs placeholder-brand-muted">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+                        <% products.forEach(function(prod) { %>
+                            <div class="glass-card rounded-[14px] p-3 shadow-card flex gap-4 relative overflow-hidden group border border-gray-100 hover:border-brand-accent/50 transition">
+                                <img src="<%= prod.image_url %>" class="w-24 h-24 object-cover rounded-[10px] group-hover:scale-105 transition duration-500 shrink-0">
+                                <div class="flex flex-col flex-1 justify-between py-1">
+                                    <div>
+                                        <h3 class="font-bold text-sm text-gray-900 leading-tight mb-1"><%= prod.name %></h3>
+                                        <p class="text-[10px] text-brand-textSecondary line-clamp-2"><%= prod.description %></p>
+                                    </div>
+                                    <div class="flex flex-col gap-2 mt-2">
+                                        <div class="flex gap-2">
+                                            <span class="inline-flex items-center text-[9px] font-bold text-gray-600 bg-gray-100 px-1.5 py-0.5 rounded"><i class="fa-solid fa-fire text-orange-500 mr-1"></i><%= prod.calories %> kcal</span>
+                                            <span class="inline-flex items-center text-[9px] font-bold text-brand-accent bg-brand-lightAccent border border-brand-lightAccent px-1.5 py-0.5 rounded"><%= prod.diet_type %></span>
+                                        </div>
+                                        <div class="flex justify-between items-center mt-1">
+                                            <span class="font-extrabold text-sm text-gray-900">S/ <%= prod.price.toFixed(2) %></span>
+                                            
+                                            <form action="/cart/add" method="POST" class="inline-block">
+                                                <input type="hidden" name="product_id" value="<%= prod.id %>">
+                                                <input type="hidden" name="name" value="<%= prod.name %>">
+                                                <input type="hidden" name="price" value="<%= prod.price %>">
+                                                <input type="hidden" name="image_url" value="<%= prod.image_url %>">
+                                                <input type="hidden" name="restaurant_id" value="<%= prod.restaurant_id %>">
+                                                <button type="submit" class="bg-[#F2F1F8] hover:bg-brand-accent hover:text-white text-[#555568] px-4 py-1.5 rounded-full text-xs font-semibold transition">Agregar <i class="fa-solid fa-cart-plus ml-1"></i></button>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <% }); %>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

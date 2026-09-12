@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Flash Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { bg: '#F4F3FA', shell: '#F9F9FD', sidebar: '#F5F4FA', accent: '#16a34a', lightAccent: '#dcfce7', textPrimary: '#20202A', textSecondary: '#737486', muted: '#A3A4B4', card: '#FFFFFF' }
+                    },
+                    animation: { 'float': 'float 6s ease-in-out infinite', 'fade-in-up': 'fadeInUp 0.8s ease-out forwards', 'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite' },
+                    keyframes: {
+                        float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-15px)' } },
+                        fadeInUp: { '0%': { opacity: '0', transform: 'translateY(20px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Liquid Glass Background */
+        body { 
+            background: linear-gradient(-45deg, #e0f2fe, #dcfce7, #fef9c3, #f3e8ff);
+            background-size: 400% 400%;
+            animation: liquidBg 15s ease infinite;
+        }
+        @keyframes liquidBg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Liquid Glass Shell */
+        .glass-shell {
+            background: rgba(255, 255, 255, 0.45) !important;
+            backdrop-filter: blur(20px) saturate(150%);
+            -webkit-backdrop-filter: blur(20px) saturate(150%);
+            border-left: 1px solid rgba(255, 255, 255, 0.8);
+            border-top: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+        }
+
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.6); 
+            backdrop-filter: blur(16px); 
+            border: 1px solid rgba(255, 255, 255, 0.8); 
+            box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.4);
+        }
+        
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.5); border-radius: 10px; }
+        .logo-bubble { transition: all 0.3s ease; }
+        .logo-bubble:hover { transform: scale(1.1) rotate(5deg); }
+        .premium-green-gradient { background: linear-gradient(135deg, rgba(6, 78, 59, 0.8) 0%, rgba(4, 120, 87, 0.8) 100%); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen text-brand-textPrimary relative">
+    
+    <!-- Esferas Líquidas Flotantes (Blobs) -->
+    <div class="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-green-300/30 mix-blend-multiply filter blur-[80px] animate-pulse-slow"></div>
+    <div class="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-yellow-200/30 mix-blend-multiply filter blur-[100px] animate-float"></div>
+    <div class="absolute top-[40%] left-[30%] w-[30vw] h-[30vw] rounded-full bg-blue-200/30 mix-blend-multiply filter blur-[90px] animate-pulse-slow" style="animation-delay: 2s;"></div>
+
+    <!-- Application Shell -->
+    <div class="glass-shell flex w-full h-screen overflow-hidden relative z-10">
+        
+        <!-- Sidebar -->
+        <aside class="w-[64px] bg-white/30 backdrop-blur-md flex flex-col items-center py-5 justify-between border-r border-white/50">
+            <div class="flex flex-col items-center gap-8">
+                <a href="/" class="logo-bubble w-[40px] h-[40px] rounded-full bg-gradient-to-tr from-brand-accent to-green-400 flex items-center justify-center shadow-md shadow-green-500/40 relative">
+                    <i class="fa-solid fa-leaf text-white absolute text-sm transform -translate-x-1 translate-y-1 opacity-90"></i>
+                    <i class="fa-solid fa-bolt text-yellow-300 absolute text-lg transform translate-x-1 -translate-y-1"></i>
+                </a>
+                <nav class="flex flex-col gap-[18px] text-brand-muted">
+                    <a href="/" class="w-10 h-10 rounded-xl bg-white text-brand-accent flex items-center justify-center shadow-sm"><i class="fa-solid fa-house"></i></a>
+                    <a href="/restaurantes" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition"><i class="fa-solid fa-utensils"></i></a>
+                    <a href="/membresias" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition" title="Membresías"><i class="fa-solid fa-crown"></i></a>
+                    <a href="#como-funciona" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition"><i class="fa-solid fa-circle-info"></i></a>
+                    <% if(user && user.role === 'admin') { %>
+                        <a href="/admin" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition" title="Panel"><i class="fa-solid fa-chart-line"></i></a>
+                    <% } %>
+                </nav>
+            </div>
+            <div class="flex flex-col gap-4 text-brand-muted">
+                <% if(user) { %>
+                    <a href="/logout" class="w-10 h-10 rounded-xl hover:bg-red-50 text-red-400 flex items-center justify-center transition" title="Salir"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                <% } else { %>
+                    <a href="/login" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition" title="Ingresar"><i class="fa-solid fa-user"></i></a>
+                <% } %>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="flex-1 flex flex-col overflow-hidden bg-white/40">
+            <!-- Scrollable Content -->
+            <div class="flex-1 overflow-y-auto">
+                
+                <!-- Hero Section Inside Shell -->
+                <section class="min-h-[70vh] flex items-center premium-green-gradient text-white px-8 relative overflow-hidden rounded-bl-3xl">
+                    <div class="absolute top-10 left-10 w-32 h-32 bg-green-400/20 rounded-full blur-2xl animate-float"></div>
+                    <div class="absolute bottom-10 right-20 w-64 h-64 bg-yellow-400/10 rounded-full blur-3xl animate-float" style="animation-delay: 2s;"></div>
+
+                    <div class="w-full max-w-[1600px] mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10 py-12">
+                        <div class="flex-1 text-center md:text-left py-8 animate-fade-in-up">
+                            <div class="inline-flex items-center gap-2 border border-brand-accent/50 bg-black/20 rounded-full px-4 py-1.5 mb-6 backdrop-blur-md">
+                                <i class="fa-solid fa-check-circle text-brand-accent text-sm"></i>
+                                <span class="text-[10px] font-bold tracking-widest uppercase text-green-100">Exclusivo en Chiclayo</span>
+                            </div>
+                            <h1 class="text-4xl md:text-6xl font-extrabold leading-[1.1] tracking-tight text-white">
+                                Asegura tu mañana.<br>
+                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-green-300">Rápido y sano.</span>
+                            </h1>
+                            <p class="mt-6 text-sm text-green-100 font-medium max-w-md mx-auto md:mx-0">
+                                Programa tu desayuno hoy. Despierta con la tranquilidad de que tu nutrición llegará a primera hora, sin demoras.
+                            </p>
+                            <div class="mt-8">
+                                <a href="/restaurantes" class="bg-brand-accent text-white px-8 py-3 rounded-full font-bold text-sm transition hover:bg-green-500 shadow-lg inline-block">
+                                    <i class="fa-solid fa-utensils mr-2"></i> Explorar Menús
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 w-full relative hidden md:block animate-float flex justify-center">
+                            <div class="relative w-full max-w-[350px]">
+                                <img src="https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?w=800" class="rounded-3xl shadow-2xl object-cover h-[350px] w-full border-4 border-white/10 relative z-10">
+                                <div class="absolute top-6 -right-8 bg-white p-4 rounded-2xl shadow-2xl flex items-center gap-3 z-20 animate-pulse-slow">
+                                    <div class="bg-green-100 p-3 rounded-full text-brand-accent shrink-0"><i class="fa-solid fa-clock"></i></div>
+                                    <div>
+                                        <p class="text-[10px] text-gray-500 font-bold uppercase">Para mañana</p>
+                                        <p class="font-extrabold text-gray-900 text-sm">7:00 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Nosotros -->
+                <section id="quienes-somos" class="py-16 px-8 relative z-10">
+                    <div class="w-full max-w-[1600px] mx-auto flex flex-col md:flex-row gap-12 items-center">
+                        <div class="flex-1 relative">
+                            <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=800" class="rounded-2xl shadow-lg w-full h-[300px] object-cover">
+                            <div class="absolute -bottom-4 -right-4 bg-brand-accent text-white p-4 rounded-xl shadow-lg">
+                                <p class="font-bold text-lg">Innovación</p>
+                                <p class="text-xs opacity-90">en cada entrega</p>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h2 class="text-xs font-bold text-brand-accent uppercase tracking-widest mb-1">Nuestra Esencia</h2>
+                            <h3 class="text-3xl font-extrabold text-gray-900 mb-5">Elige nutrición, no prisa.</h3>
+                            
+                            <div class="mb-6">
+                                <h4 class="text-lg font-bold flex items-center gap-2 mb-1"><i class="fa-solid fa-bullseye text-brand-accent"></i> Misión</h4>
+                                <p class="text-sm text-gray-600 leading-relaxed">
+                                    Facilitar el acceso a una alimentación balanceada a estudiantes y trabajadores con horarios ajustados en Chiclayo mediante programación nocturna.
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-lg font-bold flex items-center gap-2 mb-1"><i class="fa-solid fa-eye text-brand-accent"></i> Visión 2030</h4>
+                                <p class="text-sm text-gray-600 leading-relaxed">
+                                    Consolidarnos como la plataforma digital líder en gestión de desayunos saludables a nivel nacional.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Proceso -->
+                <section id="como-funciona" class="py-16 px-8 relative z-10">
+                    <div class="w-full max-w-[1600px] mx-auto">
+                        <div class="text-center mb-10">
+                            <h2 class="text-xs font-bold text-brand-accent uppercase tracking-widest mb-1">Flujo del Servicio</h2>
+                            <h3 class="text-3xl font-extrabold text-gray-900">Tu rutina en 3 pasos</h3>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-3 gap-8 relative">
+                            <div class="text-center glass-card p-6 rounded-2xl shadow-sm border border-gray-100/50">
+                                <div class="w-16 h-16 bg-brand-lightAccent text-brand-accent rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                                    <i class="fa-solid fa-mobile-alt"></i>
+                                </div>
+                                <h4 class="font-bold mb-2">1. Pide de Noche</h4>
+                                <p class="text-xs text-gray-500">Explora locales Fit, paga y define tu hora de entrega para mañana.</p>
+                            </div>
+
+                            <div class="text-center bg-brand-accent text-white p-6 rounded-2xl shadow-lg shadow-green-500/20 transform md:-translate-y-4">
+                                <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                                    <i class="fa-solid fa-fire"></i>
+                                </div>
+                                <h4 class="font-bold mb-2">2. Producción</h4>
+                                <p class="text-xs text-green-100">Los restaurantes optimizan la preparación exclusiva a primera hora.</p>
+                            </div>
+
+                            <div class="text-center glass-card p-6 rounded-2xl shadow-sm border border-gray-100/50">
+                                <div class="w-16 h-16 bg-brand-lightAccent text-brand-accent rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                                    <i class="fa-solid fa-motorcycle"></i>
+                                </div>
+                                <h4 class="font-bold mb-2">3. Entrega Exacta</h4>
+                                <p class="text-xs text-gray-500">Recibe tu orden en tu oficina o facultad en la franja acordada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membresías | Flash Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { bg: '#F4F3FA', shell: '#F9F9FD', sidebar: '#F5F4FA', accent: '#16a34a', lightAccent: '#dcfce7', textPrimary: '#20202A', textSecondary: '#737486', muted: '#A3A4B4', card: '#FFFFFF' }
+                    },
+                    boxShadow: { main: '0 10px 35px rgba(80, 75, 120, 0.08)', card: '0 4px 18px rgba(80, 75, 120, 0.05)' }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F4F3FA; background-image: linear-gradient(135deg, #F4F3FA 0%, #FFFFFF 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.72); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.7); }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #E2E1E9; border-radius: 10px; }
+        .logo-bubble { transition: all 0.3s ease; }
+        .logo-bubble:hover { transform: scale(1.1) rotate(5deg); }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen text-brand-textPrimary">
+    <div class="bg-brand-shell flex w-full h-screen overflow-hidden">
+        
+        <aside class="w-[64px] bg-brand-sidebar flex flex-col items-center py-5 justify-between border-r border-white">
+            <div class="flex flex-col items-center gap-8">
+                <a href="/" class="logo-bubble w-[40px] h-[40px] rounded-full bg-gradient-to-tr from-brand-accent to-green-400 flex items-center justify-center shadow-md shadow-green-500/40 relative">
+                    <i class="fa-solid fa-leaf text-white absolute text-sm transform -translate-x-1 translate-y-1 opacity-90"></i>
+                    <i class="fa-solid fa-bolt text-yellow-300 absolute text-lg transform translate-x-1 -translate-y-1"></i>
+                </a>
+                <nav class="flex flex-col gap-[18px] text-brand-muted">
+                    <a href="/" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition"><i class="fa-solid fa-house"></i></a>
+                    <a href="/restaurantes" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition"><i class="fa-solid fa-utensils"></i></a>
+                    <a href="/membresias" class="w-10 h-10 rounded-xl bg-white text-brand-accent flex items-center justify-center shadow-card" title="Membresías"><i class="fa-solid fa-crown"></i></a>
+                    <% if(user && user.role === 'admin') { %>
+                        <a href="/admin" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition" title="Panel"><i class="fa-solid fa-chart-line"></i></a>
+                    <% } %>
+                </nav>
+            </div>
+            <div class="flex flex-col gap-4 text-brand-muted">
+                <% if(user) { %>
+                    <a href="/logout" class="w-10 h-10 rounded-xl hover:bg-red-50 text-red-400 flex items-center justify-center transition"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                <% } else { %>
+                    <a href="/login" class="w-10 h-10 rounded-xl hover:bg-white hover:text-brand-accent flex items-center justify-center transition"><i class="fa-solid fa-user"></i></a>
+                <% } %>
+            </div>
+        </aside>
+
+        <main class="flex-1 flex flex-col overflow-hidden">
+            <div class="flex-1 overflow-y-auto p-[20px] lg:p-[40px] bg-white rounded-tl-[20px]">
+                <div class="w-full max-w-[1600px] mx-auto text-center pt-10">
+                    <div class="inline-flex items-center gap-2 border border-brand-accent/50 bg-brand-lightAccent rounded-full px-4 py-1.5 mb-6">
+                        <i class="fa-solid fa-crown text-brand-accent text-sm"></i>
+                        <span class="text-[10px] font-bold tracking-widest uppercase text-brand-accent">Suscripciones Flash</span>
+                    </div>
+                    <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">Ahorra tiempo y dinero.</h1>
+                    <p class="text-sm text-brand-textSecondary mb-12 max-w-lg mx-auto">Selecciona el plan que mejor se adapte a tu ritmo de vida y olvídate de preocuparte por el desayuno cada noche.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
+                        
+                        <!-- Plan Estudiante -->
+                        <div class="glass-card rounded-[20px] p-8 shadow-card border border-gray-100 hover:border-brand-accent/50 transition relative overflow-hidden group">
+                            <div class="absolute top-0 right-0 bg-gray-100 px-4 py-1 rounded-bl-[14px] text-xs font-bold text-gray-500">Básico</div>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-2">Plan Estudiante</h2>
+                            <p class="text-xs text-brand-textSecondary mb-6">Ideal para facultades y clases matutinas.</p>
+                            <div class="mb-6">
+                                <span class="text-4xl font-extrabold text-gray-900">S/ 49</span><span class="text-gray-500 font-semibold text-sm">/mes</span>
+                            </div>
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex items-center text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-brand-accent mr-3"></i> Envíos gratis a facultades (UNPRG, USAT).</li>
+                                <li class="flex items-center text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-brand-accent mr-3"></i> 5% dscto en platillos seleccionados.</li>
+                                <li class="flex items-center text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-brand-accent mr-3"></i> Soporte por chat de WhatsApp.</li>
+                            </ul>
+                            <a href="/checkout-membresia/estudiante" class="block w-full bg-[#F2F1F8] hover:bg-gray-200 text-[#555568] py-3 rounded-full text-sm font-bold transition text-center">Elegir Plan Estudiante</a>
+                        </div>
+
+                        <!-- Plan Ejecutivo Fit -->
+                        <div class="glass-card rounded-[20px] p-8 shadow-card border-2 border-brand-accent relative overflow-hidden group bg-gradient-to-br from-white to-brand-lightAccent/20">
+                            <div class="absolute top-0 right-0 bg-brand-accent px-4 py-1 rounded-bl-[14px] text-xs font-bold text-white shadow-lg">Recomendado</div>
+                            <h2 class="text-2xl font-bold text-gray-900 mb-2">Plan Ejecutivo Fit</h2>
+                            <p class="text-xs text-brand-textSecondary mb-6">Para quienes no pueden perder ni un minuto.</p>
+                            <div class="mb-6">
+                                <span class="text-4xl font-extrabold text-gray-900">S/ 89</span><span class="text-gray-500 font-semibold text-sm">/mes</span>
+                            </div>
+                            <ul class="space-y-4 mb-8">
+                                <li class="flex items-center text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-brand-accent mr-3"></i> Delivery prioritario gratis a oficinas.</li>
+                                <li class="flex items-center text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-brand-accent mr-3"></i> 15% dscto en todo el catálogo.</li>
+                                <li class="flex items-center text-sm font-medium text-gray-700"><i class="fa-solid fa-check text-brand-accent mr-3"></i> Función "Auto-Piloto" (Desayuno recurrente).</li>
+                            </ul>
+                            <a href="/checkout-membresia/ejecutivo" class="block w-full bg-brand-accent hover:bg-green-600 text-white py-3 rounded-full text-sm font-bold shadow-lg shadow-green-500/30 transition text-center">Suscribirse al Plan Ejecutivo</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
