@@ -2,7 +2,7 @@
 
 Plataforma integral para programar desayunos saludables la noche anterior, con entrega rápida y puntual por la mañana.
 
-## 📁 Estructura del Repositorio
+##  Estructura del Repositorio
 
 - **`app_desayuno_flash/`**: Aplicación web completa (Backend Node.js/Express, Frontend EJS + Tailwind CSS, Base de Datos SQLite, Carrito, Autenticación y Panel Administrativo).
 - **`web_desayuno_flash/`**: Landing page estática de presentación para clientes.
@@ -11,7 +11,7 @@ Plataforma integral para programar desayunos saludables la noche anterior, con e
 
 ---
 
-## 🚀 ¿Cómo ejecutar la aplicación web en local o en tu propio host?
+##  ¿Cómo ejecutar la aplicación web en local o en tu propio host?
 
 ### 1. Requisitos
 - [Node.js](https://nodejs.org/) (versión 16 o superior).
@@ -34,7 +34,7 @@ El servidor se iniciará automáticamente en:
 
 ---
 
-## 🔑 Cuentas de Acceso
+##  Cuentas de Acceso
 
 - **Administrador:**
   - **Email:** `admin@desayunoflash.com`
